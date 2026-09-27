@@ -101,9 +101,7 @@ open StorageCleaner.xcodeproj
 - Press `Cmd + R` (or click the **Play** button in Xcode).
 - The app will compile and launch immediately in the iOS Simulator.
 
-### Simulator Testing Tip:
-- By default, the app has **Demo Mode** enabled in the top right header (`Demo Mode` pill). This provides instant access to mock photo bursts, 4K videos, duplicate contacts, and screenshots so you can test the full cleanup flow without needing to manually populate simulator media!
-- Tap the **Demo Mode** button in the header or in **Settings** to toggle between Live Device Library and Simulated Demo Data at any time.
+
 
 ---
 
