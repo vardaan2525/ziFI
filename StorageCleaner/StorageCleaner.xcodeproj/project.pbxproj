@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000012C90000100000001 /* StorageCleanerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000012C90000100000001 /* StorageCleanerApp.swift */; };
+		A10000022C90000100000001 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000022C90000100000001 /* Theme.swift */; };
+		A10000032C90000100000001 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000032C90000100000001 /* StorageManager.swift */; };
+		A10000042C90000100000001 /* PhotoScannerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000042C90000100000001 /* PhotoScannerManager.swift */; };
+		A10000062C90000100000001 /* VideoCompressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000062C90000100000001 /* VideoCompressor.swift */; };
+		A10000072C90000100000001 /* VaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000072C90000100000001 /* VaultManager.swift */; };
+		A10000082C90000100000001 /* StorageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000082C90000100000001 /* StorageItem.swift */; };
+		A10000092C90000100000001 /* MockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000092C90000100000001 /* MockDataService.swift */; };
+		A10000102C90000100000001 /* StorageGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000102C90000100000001 /* StorageGaugeView.swift */; };
+		A10000112C90000100000001 /* CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000112C90000100000001 /* CategoryCardView.swift */; };
+		A10000122C90000100000001 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000122C90000100000001 /* DashboardView.swift */; };
+		A10000132C90000100000001 /* SimilarPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000132C90000100000001 /* SimilarPhotosView.swift */; };
+		A10000142C90000100000001 /* ScreenshotsCleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000142C90000100000001 /* ScreenshotsCleanerView.swift */; };
+		A10000152C90000100000001 /* LargeVideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000152C90000100000001 /* LargeVideosView.swift */; };
+		A10000172C90000100000001 /* ReviewBeforeDeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000172C90000100000001 /* ReviewBeforeDeleteView.swift */; };
+		A10000182C90000100000001 /* SpaceFreedCelebrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000182C90000100000001 /* SpaceFreedCelebrationView.swift */; };
+		A10000192C90000100000001 /* SwipeCleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000192C90000100000001 /* SwipeCleanerView.swift */; };
+		A10000202C90000100000001 /* BlurryPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000202C90000100000001 /* BlurryPhotosView.swift */; };
+		A10000212C90000100000001 /* SecretVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000212C90000100000001 /* SecretVaultView.swift */; };
+		A10000232C90000100000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000232C90000100000001 /* SettingsView.swift */; };
+		A10000242C90000100000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000242C90000100000001 /* Assets.xcassets */; };
+		A10000262C90000100000001 /* CalendarCleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000262C90000100000001 /* CalendarCleanerView.swift */; };
+		A10000272C90000100000001 /* AIUnblurService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000272C90000100000001 /* AIUnblurService.swift */; };
+		A10000282C90000100000001 /* AIUnblurStudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000282C90000100000001 /* AIUnblurStudioView.swift */; };
+		A10000292C90000100000001 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000292C90000100000001 /* ContactsManager.swift */; };
+		A10000302C90000100000001 /* ContactsCleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000302C90000100000001 /* ContactsCleanerView.swift */; };
+		A10000342C90000100000001 /* video.mov in Resources */ = {isa = PBXBuildFile; fileRef = A20000342C90000100000001 /* video.mov */; };
+				W10000012C90000100000001 /* StorageWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000312C90000100000001 /* StorageWidget.swift */; };
+		W10000022C90000100000001 /* StorageWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000322C90000100000001 /* StorageWidgetBundle.swift */; };
+		W10000032C90000100000001 /* StorageWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = W00000032C90000100000001 /* StorageWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		W20000012C90000100000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000102C90000100000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = W00000022C90000100000001;
+			remoteInfo = StorageWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A00000012C90000100000001 /* StorageCleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StorageCleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000012C90000100000001 /* StorageCleanerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCleanerApp.swift; sourceTree = "<group>"; };
+		A20000022C90000100000001 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A20000032C90000100000001 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		A20000042C90000100000001 /* PhotoScannerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoScannerManager.swift; sourceTree = "<group>"; };
+		A20000062C90000100000001 /* VideoCompressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCompressor.swift; sourceTree = "<group>"; };
+		A20000072C90000100000001 /* VaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultManager.swift; sourceTree = "<group>"; };
+		A20000082C90000100000001 /* StorageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageItem.swift; sourceTree = "<group>"; };
+		A20000092C90000100000001 /* MockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataService.swift; sourceTree = "<group>"; };
+		A20000102C90000100000001 /* StorageGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageGaugeView.swift; sourceTree = "<group>"; };
+		A20000112C90000100000001 /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
+		A20000122C90000100000001 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		A20000132C90000100000001 /* SimilarPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarPhotosView.swift; sourceTree = "<group>"; };
+		A20000142C90000100000001 /* ScreenshotsCleanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotsCleanerView.swift; sourceTree = "<group>"; };
+		A20000152C90000100000001 /* LargeVideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeVideosView.swift; sourceTree = "<group>"; };
+		A20000172C90000100000001 /* ReviewBeforeDeleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewBeforeDeleteView.swift; sourceTree = "<group>"; };
+		A20000182C90000100000001 /* SpaceFreedCelebrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceFreedCelebrationView.swift; sourceTree = "<group>"; };
+		A20000192C90000100000001 /* SwipeCleanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCleanerView.swift; sourceTree = "<group>"; };
+		A20000202C90000100000001 /* BlurryPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurryPhotosView.swift; sourceTree = "<group>"; };
+		A20000212C90000100000001 /* SecretVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretVaultView.swift; sourceTree = "<group>"; };
+		A20000232C90000100000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A20000242C90000100000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20000252C90000100000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000262C90000100000001 /* CalendarCleanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCleanerView.swift; sourceTree = "<group>"; };
+		A20000272C90000100000001 /* AIUnblurService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIUnblurService.swift; sourceTree = "<group>"; };
+		A20000282C90000100000001 /* AIUnblurStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIUnblurStudioView.swift; sourceTree = "<group>"; };
+		A20000292C90000100000001 /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
+		A20000302C90000100000001 /* ContactsCleanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCleanerView.swift; sourceTree = "<group>"; };
+		A20000312C90000100000001 /* StorageWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageWidget.swift; sourceTree = "<group>"; };
+		A20000322C90000100000001 /* StorageWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageWidgetBundle.swift; sourceTree = "<group>"; };
+		A20000332C90000100000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000342C90000100000001 /* video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video.mov; sourceTree = "<group>"; };
+		W00000032C90000100000001 /* StorageWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = wrapper.app-extension; includeInIndex = 0; path = StorageWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		W00000012C90000100000001 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				W10000032C90000100000001 /* StorageWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000022C90000100000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		W00000042C90000100000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00000032C90000100000001 = {
+			isa = PBXGroup;
+			children = (
+				A00000042C90000100000001 /* StorageCleaner */,
+				A00000052C90000100000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000042C90000100000001 /* StorageCleaner */ = {
+			isa = PBXGroup;
+			children = (
+				A20000012C90000100000001 /* StorageCleanerApp.swift */,
+				B00000012C90000100000001 /* Core */,
+				B00000022C90000100000001 /* Models */,
+				B00000032C90000100000001 /* Views */,
+				B00000232C90000100000001 /* StorageWidget */,
+				A20000242C90000100000001 /* Assets.xcassets */,
+				A20000252C90000100000001 /* Info.plist */,
+				A20000342C90000100000001 /* video.mov */,
+			);
+			path = StorageCleaner;
+			sourceTree = "<group>";
+		};
+		A00000052C90000100000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000012C90000100000001 /* StorageCleaner.app */,
+				W00000032C90000100000001 /* StorageWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B00000012C90000100000001 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A20000022C90000100000001 /* Theme.swift */,
+				A20000032C90000100000001 /* StorageManager.swift */,
+				A20000042C90000100000001 /* PhotoScannerManager.swift */,
+				A20000062C90000100000001 /* VideoCompressor.swift */,
+				A20000072C90000100000001 /* VaultManager.swift */,
+				A20000272C90000100000001 /* AIUnblurService.swift */,
+				A20000292C90000100000001 /* ContactsManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B00000022C90000100000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A20000082C90000100000001 /* StorageItem.swift */,
+				A20000092C90000100000001 /* MockDataService.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B00000032C90000100000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B00000102C90000100000001 /* Dashboard */,
+				B00000112C90000100000001 /* SimilarPhotos */,
+				B00000122C90000100000001 /* Screenshots */,
+				B00000132C90000100000001 /* LargeVideos */,
+				B00000152C90000100000001 /* Review */,
+				B00000162C90000100000001 /* Celebration */,
+				B00000172C90000100000001 /* SwipeClean */,
+				B00000182C90000100000001 /* BlurryPhotos */,
+				B00000192C90000100000001 /* Vault */,
+				B00000202C90000100000001 /* Calendar */,
+				B00000212C90000100000001 /* Settings */,
+				B00000222C90000100000001 /* Contacts */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B00000202C90000100000001 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				A20000262C90000100000001 /* CalendarCleanerView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		B00000102C90000100000001 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A20000102C90000100000001 /* StorageGaugeView.swift */,
+				A20000112C90000100000001 /* CategoryCardView.swift */,
+				A20000122C90000100000001 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		B00000112C90000100000001 /* SimilarPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				A20000132C90000100000001 /* SimilarPhotosView.swift */,
+			);
+			path = SimilarPhotos;
+			sourceTree = "<group>";
+		};
+		B00000122C90000100000001 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				A20000142C90000100000001 /* ScreenshotsCleanerView.swift */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
+		B00000132C90000100000001 /* LargeVideos */ = {
+			isa = PBXGroup;
+			children = (
+				A20000152C90000100000001 /* LargeVideosView.swift */,
+			);
+			path = LargeVideos;
+			sourceTree = "<group>";
+		};
+
+		B00000152C90000100000001 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				A20000172C90000100000001 /* ReviewBeforeDeleteView.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		B00000162C90000100000001 /* Celebration */ = {
+			isa = PBXGroup;
+			children = (
+				A20000182C90000100000001 /* SpaceFreedCelebrationView.swift */,
+			);
+			path = Celebration;
+			sourceTree = "<group>";
+		};
+		B00000172C90000100000001 /* SwipeClean */ = {
+			isa = PBXGroup;
+			children = (
+				A20000192C90000100000001 /* SwipeCleanerView.swift */,
+			);
+			path = SwipeClean;
+			sourceTree = "<group>";
+		};
+		B00000182C90000100000001 /* BlurryPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				A20000202C90000100000001 /* BlurryPhotosView.swift */,
+				A20000282C90000100000001 /* AIUnblurStudioView.swift */,
+			);
+			path = BlurryPhotos;
+			sourceTree = "<group>";
+		};
+		B00000192C90000100000001 /* Vault */ = {
+			isa = PBXGroup;
+			children = (
+				A20000212C90000100000001 /* SecretVaultView.swift */,
+			);
+			path = Vault;
+			sourceTree = "<group>";
+		};
+
+		B00000212C90000100000001 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A20000232C90000100000001 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+
+		B00000222C90000100000001 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				A20000302C90000100000001 /* ContactsCleanerView.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+
+		B00000232C90000100000001 /* StorageWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A20000312C90000100000001 /* StorageWidget.swift */,
+				A20000322C90000100000001 /* StorageWidgetBundle.swift */,
+				A20000332C90000100000001 /* Info.plist */,
+			);
+			path = StorageWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000062C90000100000001 /* StorageCleaner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000092C90000100000001 /* Build configuration list for PBXNativeTarget "StorageCleaner" */;
+			buildPhases = (
+				A00000072C90000100000001 /* Sources */,
+				A00000022C90000100000001 /* Frameworks */,
+				A00000082C90000100000001 /* Resources */,
+				W00000012C90000100000001 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				W20000022C90000100000001 /* PBXTargetDependency */,
+			);
+			name = StorageCleaner;
+			productName = StorageCleaner;
+			productReference = A00000012C90000100000001 /* StorageCleaner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		W00000022C90000100000001 /* StorageWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = W00000052C90000100000001 /* Build configuration list for PBXNativeTarget "StorageWidgetExtension" */;
+			buildPhases = (
+				W00000062C90000100000001 /* Sources */,
+				W00000042C90000100000001 /* Frameworks */,
+				W00000072C90000100000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StorageWidgetExtension;
+			productName = StorageWidgetExtension;
+			productReference = W00000032C90000100000001 /* StorageWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000102C90000100000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					A00000062C90000100000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					W00000022C90000100000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A00000112C90000100000001 /* Build configuration list for PBXProject "StorageCleaner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00000032C90000100000001;
+			productRefGroup = A00000052C90000100000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000062C90000100000001 /* StorageCleaner */,
+				W00000022C90000100000001 /* StorageWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000082C90000100000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000242C90000100000001 /* Assets.xcassets in Resources */,
+				A10000342C90000100000001 /* video.mov in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		W00000072C90000100000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000072C90000100000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000012C90000100000001 /* StorageCleanerApp.swift in Sources */,
+				A10000022C90000100000001 /* Theme.swift in Sources */,
+				A10000032C90000100000001 /* StorageManager.swift in Sources */,
+				A10000042C90000100000001 /* PhotoScannerManager.swift in Sources */,
+				A10000062C90000100000001 /* VideoCompressor.swift in Sources */,
+				A10000072C90000100000001 /* VaultManager.swift in Sources */,
+				A10000082C90000100000001 /* StorageItem.swift in Sources */,
+				A10000092C90000100000001 /* MockDataService.swift in Sources */,
+				A10000102C90000100000001 /* StorageGaugeView.swift in Sources */,
+				A10000112C90000100000001 /* CategoryCardView.swift in Sources */,
+				A10000122C90000100000001 /* DashboardView.swift in Sources */,
+				A10000132C90000100000001 /* SimilarPhotosView.swift in Sources */,
+				A10000142C90000100000001 /* ScreenshotsCleanerView.swift in Sources */,
+				A10000152C90000100000001 /* LargeVideosView.swift in Sources */,
+				A10000172C90000100000001 /* ReviewBeforeDeleteView.swift in Sources */,
+				A10000182C90000100000001 /* SpaceFreedCelebrationView.swift in Sources */,
+				A10000192C90000100000001 /* SwipeCleanerView.swift in Sources */,
+				A10000202C90000100000001 /* BlurryPhotosView.swift in Sources */,
+				A10000212C90000100000001 /* SecretVaultView.swift in Sources */,
+				A10000232C90000100000001 /* SettingsView.swift in Sources */,
+				A10000262C90000100000001 /* CalendarCleanerView.swift in Sources */,
+				A10000272C90000100000001 /* AIUnblurService.swift in Sources */,
+				A10000282C90000100000001 /* AIUnblurStudioView.swift in Sources */,
+				A10000292C90000100000001 /* ContactsManager.swift in Sources */,
+				A10000302C90000100000001 /* ContactsCleanerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		W00000062C90000100000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				W10000012C90000100000001 /* StorageWidget.swift in Sources */,
+				W10000022C90000100000001 /* StorageWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		W20000022C90000100000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = W00000022C90000100000001 /* StorageWidgetExtension */;
+			targetProxy = W20000012C90000100000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A00000122C90000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A00000132C90000100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A00000142C90000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4LT49WAW6M;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StorageCleaner/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vardaan.StorageCleanerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A00000152C90000100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4LT49WAW6M;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StorageCleaner/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vardaan.StorageCleanerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		W00000082C90000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4LT49WAW6M;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StorageCleaner/StorageWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ziFI Storage";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vardaan.StorageCleanerApp.StorageWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		W00000092C90000100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4LT49WAW6M;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StorageCleaner/StorageWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ziFI Storage";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vardaan.StorageCleanerApp.StorageWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000092C90000100000001 /* Build configuration list for PBXNativeTarget "StorageCleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000142C90000100000001 /* Debug */,
+				A00000152C90000100000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000112C90000100000001 /* Build configuration list for PBXProject "StorageCleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000122C90000100000001 /* Debug */,
+				A00000132C90000100000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		W00000052C90000100000001 /* Build configuration list for PBXNativeTarget "StorageWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				W00000082C90000100000001 /* Debug */,
+				W00000092C90000100000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000102C90000100000001 /* Project object */;
+}
